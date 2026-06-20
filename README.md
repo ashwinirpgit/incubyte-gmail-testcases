@@ -1,53 +1,62 @@
-# Incubyte QA Assignment – Gmail Compose Functionality Testing
+# Incubyte QA Assignment
 
-## Objective
+## Overview
 
-The objective of this assignment is to test the Gmail Compose functionality for sending an email with the following details:
+This repository contains the test cases created for the Incubyte QA Assessment.
+
+The objective of this assignment is to test Gmail's **Compose Email** functionality by sending an email with:
 
 * Subject: **Incubyte**
 * Body: **QA test for Incubyte**
 
-## Scope
+## Test Coverage
 
-The testing covers:
+The test cases cover the following scenarios:
 
-* Gmail Compose window
-* Recipient email validation
-* Subject field validation
-* Email body validation
-* Email sending functionality
-* Sent email verification
+### Positive Test Cases
+
+* Gmail login
+* Opening Compose window
+* Entering valid recipient email address
+* Entering subject and email body
+* Sending email successfully
+* Verifying sent email
+* Undo Send functionality
+* Sending email to multiple recipients
+
+### Negative Test Cases
+
+* Sending email without recipient
+* Invalid email address validation
+* Special characters in recipient field
+* Blank subject validation
+* Blank body scenarios
+* Internet disconnection during send
+* Draft discard confirmation
+* Maximum length validations
+* Multiple clicks on Send button
+* File attachment validation
+* File size limit validation
 
 ## Deliverables
 
-### 1. Traditional Test Cases
-
-* Positive Test Cases
-* Negative Test Cases
-
-### 2. BDD Test Cases
-
-BDD scenarios written using Given-When-Then format.
-
-## Test Data
-
-| Field   | Value                |
-| ------- | -------------------- |
-| Subject | Incubyte             |
-| Body    | QA test for Incubyte |
+* Traditional Test Cases
+* BDD Test Cases
+* Positive and Negative Test Scenarios
 
 ## Assumptions
 
-* User is already logged into Gmail.
-* Gmail service is available and operational.
-* A valid recipient email address is available for testing.
+* User is already registered with Gmail.
+* User has valid login credentials.
+* Gmail service is available and accessible.
+* Internet connection is stable unless explicitly mentioned in a test case.
 
 ## Repository Structure
 
 ```text
 .
 ├── README.md
-└── Incubyte_Gmail_Test_Cases.xlsx
+└── Gmail_Compose_Test_Cases.xlsx
 ```
 
 ## Author
@@ -56,4 +65,4 @@ Ashwini
 
 ## Submission
 
-This repository contains the test cases created for the Incubyte QA Assessment.
+This repository was created as part of the Incubyte QA Assessment.
